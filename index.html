@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    /* Add your CSS styles for the cart items, buttons, and total here */
+    .cart-item {
+      margin-bottom: 10px;
+    }
+    
+    .heart-button {
+      cursor: pointer;
+    }
+
+    .heart-button.active {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="shopping-cart">
+    <div class="cart-item">
+      <span>SMILLE</span>
+      <button onclick="decreaseQuantity(1)">-</button>
+      <span id="quantity-1">1</span>
+      <button onclick="increaseQuantity(1)">+</button>
+      <button onclick="deleteItem(1)">Delete</button>
+      <span class="heart-button" onclick="toggleLike(1)">❤️</span>
+    </div>
+
+    <div class="cart-item">
+      <span>FARINE</span>
+      <button onclick="decreaseQuantity(2)">-</button>
+      <span id="quantity-2">1</span>
+      <button onclick="increaseQuantity(2)">+</button>
+      <button onclick="deleteItem(2)">Delete</button>
+      <span class="heart-button" onclick="toggleLike(2)">❤️</span>
+    </div>
+
+    <div class="cart-item">
+      <span>LAIT</span>
+      <button onclick="decreaseQuantity(3)">-</button>
+      <span id="quantity-3">1</span>
+      <button onclick="increaseQuantity(3)">+</button>
+      <button onclick="deleteItem(3)">Delete</button>
+      <span class="heart-button" onclick="toggleLike(3)">❤️</span>
+    </div>
+
+    <div class="cart-item">
+      <span>MAJOR</span>
+      <button onclick="decreaseQuantity(4)">-</button>
+      <span id="quantity-4">1</span>
+      <button onclick="increaseQuantity(4)">+</button>
+      <button onclick="deleteItem(4)">Delete</button>
+      <span class="heart-button" onclick="toggleLike(4)">❤️</span>
+    </div>
+
+    <div class="cart-item">
+      <span>SCALOUPE</span>
+      <button onclick="decreaseQuantity(5)">-</button>
+      <span id="quantity-5">1</span>
+      <button onclick="increaseQuantity(5)">+</button>
+      <button onclick="deleteItem(5)">Delete</button>
+      <span class="heart-button" onclick="toggleLike(5)">❤️</span>
+    </div>
+
+    <!-- Add more items as needed -->
+
+    <!-- Total Price -->
+    <p>Total Price: $<span id="total-price">0.00</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
